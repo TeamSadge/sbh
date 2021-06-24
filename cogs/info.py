@@ -40,7 +40,7 @@ class Info(commands.Cog):
             title="Bot info",
             color=0x43bab8,
             timestamp=datetime.now(),
-            description=f"**Server Count:** {len(self.bot.guilds)}\n**Bot Users:** {botUsers}\n**Bot Uptime:** {uptime}\n**Ping:** {round(self.bot.latency * 1000)} ms"
+            description=f"**Server Count:** {len(self.bot.guilds)}\n**Total Users:** {botUsers}\n**Bot Uptime:** {uptime}\n**Ping:** {round(self.bot.latency * 1000)} ms"
         )
         botinfo.set_footer(
             text=f'Requested by {ctx.message.author.name}',
